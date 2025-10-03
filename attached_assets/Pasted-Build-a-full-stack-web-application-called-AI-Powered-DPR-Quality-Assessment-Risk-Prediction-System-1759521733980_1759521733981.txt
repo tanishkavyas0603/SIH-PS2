@@ -1,0 +1,110 @@
+Build a full-stack web application called AI-Powered DPR Quality Assessment & Risk Prediction System. The application should be production-ready, error-free, and deployable.
+
+🔹 Tech Stack
+
+Frontend: ReactJS + TailwindCSS (modern, clean, responsive, dashboard-style UI).
+
+Backend: Python (FastAPI or Flask).
+
+Database: PostgreSQL (with SQLAlchemy ORM).
+
+AI/NLP Models: HuggingFace Transformers (for NLP), scikit-learn or XGBoost (for ML risk scoring), SHAP for Explainable AI.
+
+Geospatial: Integrate LeafletJS or Mapbox for interactive maps.
+
+Deployment: Should be deployable on Replit or Docker-ready.
+
+🔹 Core Features
+1. DPR Upload & Processing
+
+Allow users to upload DPRs in PDF, Word, or text.
+
+Extract structured data using OCR + NLP (Tesseract for OCR, Transformers for NLP).
+
+Store extracted data in the PostgreSQL database.
+
+2. AI Quality Scoring
+
+Implement a scoring engine that evaluates DPRs on: Completeness, Feasibility, Financial Viability, Risk Assessment.
+
+Generate a Quality Score (0–100).
+
+Show Explainable AI output (use SHAP/LIME to explain why score is low).
+
+3. Geospatial Validation
+
+Integrate GIS maps to validate DPR claims.
+
+Example: If DPR says “road length = 50 km in hilly terrain”, cross-check with map data.
+
+Show heatmaps (green, yellow, red) for risk zones.
+
+4. Fraud & Duplication Detector
+
+Detect copy-paste/plagiarism between DPRs.
+
+Highlight suspicious text in red directly inside the PDF preview.
+
+Flag inflated budgets or duplicate contractors.
+
+5. WOW Element → Predictive Risk Simulation
+
+Build a Digital Twin Simulator:
+
+Let officials run “what-if” scenarios.
+
+Example: If material cost ↑ 20%, show new project cost & risk score.
+
+If monsoon delay occurs, show timeline extension.
+
+Present results via interactive graphs and timelines (use Chart.js or Recharts).
+
+🔹 User Interface (Impressive & Modern)
+
+Landing Page: Hero section with project title, brief tagline, and "Upload DPR" button.
+
+Dashboard (after upload):
+
+Card-based layout (rounded corners, drop shadows).
+
+Left Sidebar: Navigation → Dashboard, Upload, Risk Simulation, Fraud Detector.
+
+Main Area:
+
+DPR Summary (Auto-generated).
+
+Quality Score Gauge (radial chart).
+
+Risk Flags (traffic-light indicators).
+
+Interactive GIS Map (Leaflet/Mapbox).
+
+Fraud Heatmap (PDF preview with red highlights).
+
+Risk Simulation Page: Slider inputs for cost, timeline, resources → AI updates projections dynamically.
+
+Accessibility: Support for multilingual summaries (English, Hindi, Assamese).
+
+🔹 Backend APIs
+
+/upload → Upload and parse DPR.
+
+/score → Return AI Quality Score + Explainable reasons.
+
+/map → Return geospatial risk data.
+
+/fraud-check → Return plagiarism/duplication highlights.
+
+/simulate → Run predictive risk simulation.
+
+🔹 Additional Requirements
+
+Offline functionality: Cache data for use in low-connectivity areas.
+
+Voice-enabled assistant (optional): Reads summary in Hindi/Assamese.
+
+Code must be clean, modular, and documented.
+
+Must run without any errors on first execution.
+
+Include seed dummy DPR data for demo purposes.
