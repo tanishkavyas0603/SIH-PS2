@@ -1,0 +1,82 @@
+{
+  "common": {
+    "signIn": "Sign In",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "getStartedNow": "Get Started Now",
+    "dashboard": "Dashboard",
+    "navigation": "Navigation"
+  },
+  "landing": {
+    "title": "DPR Assessment",
+    "badge": "Powered by Advanced AI",
+    "heading": "AI-Powered DPR Quality Assessment & Risk Prediction",
+    "subheading": "Transform infrastructure project evaluation with intelligent quality scoring, fraud detection, geospatial validation, and predictive risk simulation.",
+    "enterpriseSecurity": "Enterprise Security",
+    "governmentCompliant": "Government Compliant",
+    "realtimeAnalysis": "Real-time Analysis",
+    "featuresTitle": "Powerful Features",
+    "featuresSubtitle": "Comprehensive tools for complete DPR lifecycle management and assessment",
+    "aiScoringTitle": "AI Quality Scoring",
+    "aiScoringDesc": "Intelligent evaluation of completeness, feasibility, financial viability, and risk with explainable AI insights.",
+    "fraudDetectionTitle": "Fraud Detection",
+    "fraudDetectionDesc": "Automatic identification of duplicate content, plagiarism, and suspicious patterns across all DPRs.",
+    "geospatialTitle": "Geospatial Validation",
+    "geospatialDesc": "Interactive maps with risk zone visualization and project location verification.",
+    "simulationTitle": "Risk Simulation",
+    "simulationDesc": "Predictive what-if scenarios for cost, timeline, and resource adjustments with real-time impact analysis.",
+    "rbacTitle": "Role-Based Access",
+    "rbacDesc": "Secure workflows for Officials, Reviewers, and Admins with complete audit trails.",
+    "reportsTitle": "Report Export",
+    "reportsDesc": "Generate professional PDF and Excel reports with comprehensive analysis and recommendations.",
+    "ctaTitle": "Ready to Transform Your DPR Assessment?",
+    "ctaSubtitle": "Join government departments using AI-powered analysis for infrastructure projects",
+    "footer": "© 2024 DPR Assessment System. Built for Government Infrastructure Projects."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back! Here's an overview of your DPR assessment activities.",
+    "totalDprs": "Total DPRs",
+    "underReview": "Under Review",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "avgQualityScore": "Avg Quality Score",
+    "recentDprs": "Recent DPRs",
+    "qualityScore": "Quality Score",
+    "riskFlags": "Risk Flags",
+    "auditTrail": "Audit Trail",
+    "exportReports": "Export Reports",
+    "viewAnalysis": "View Analysis",
+    "status": "Status",
+    "submittedBy": "Submitted By",
+    "date": "Date",
+    "actions": "Actions"
+  },
+  "sidebar": {
+    "uploadDpr": "Upload DPR",
+    "mySubmissions": "My Submissions",
+    "auditTrail": "Audit Trail",
+    "reviewQueue": "Review Queue",
+    "fraudDetection": "Fraud Detection",
+    "myComments": "My Comments",
+    "allDprs": "All DPRs",
+    "riskSimulation": "Risk Simulation",
+    "geospatialView": "Geospatial View",
+    "userManagement": "User Management",
+    "official": "Official",
+    "reviewer": "Reviewer",
+    "admin": "Admin"
+  },
+  "status": {
+    "approved": "Approved",
+    "underReview": "Under Review",
+    "rejected": "Rejected",
+    "pending": "Pending"
+  },
+  "language": {
+    "selectLanguage": "Select Your Language",
+    "selectPreferred": "Please select your preferred language to continue",
+    "continue": "Continue",
+    "changeLanguage": "Change Language"
+  }
+}
