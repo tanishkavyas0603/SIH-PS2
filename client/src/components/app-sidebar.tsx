@@ -20,31 +20,32 @@ import {
   SidebarHeader,
 } from "@/components/ui/sidebar";
 import { Link, useLocation } from "wouter";
+import { useTranslation } from "react-i18next";
 
 type Role = "official" | "reviewer" | "admin";
 
-const menuItems = {
+const getMenuItems = (t: any) => ({
   official: [
-    { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
-    { title: "Upload DPR", url: "/upload", icon: Upload },
-    { title: "My Submissions", url: "/submissions", icon: FileText },
-    { title: "Audit Trail", url: "/audit", icon: Activity },
+    { title: t('common.dashboard'), url: "/dashboard", icon: LayoutDashboard },
+    { title: t('sidebar.uploadDpr'), url: "/upload", icon: Upload },
+    { title: t('sidebar.mySubmissions'), url: "/submissions", icon: FileText },
+    { title: t('sidebar.auditTrail'), url: "/audit", icon: Activity },
   ],
   reviewer: [
-    { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
-    { title: "Review Queue", url: "/review-queue", icon: FileText },
-    { title: "Fraud Detection", url: "/fraud", icon: Shield },
-    { title: "My Comments", url: "/comments", icon: Activity },
+    { title: t('common.dashboard'), url: "/dashboard", icon: LayoutDashboard },
+    { title: t('sidebar.reviewQueue'), url: "/review-queue", icon: FileText },
+    { title: t('sidebar.fraudDetection'), url: "/fraud", icon: Shield },
+    { title: t('sidebar.myComments'), url: "/comments", icon: Activity },
   ],
   admin: [
-    { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
-    { title: "All DPRs", url: "/all-dprs", icon: FileText },
-    { title: "Risk Simulation", url: "/simulation", icon: TrendingUp },
-    { title: "Geospatial View", url: "/map", icon: Map },
-    { title: "User Management", url: "/users", icon: Users },
-    { title: "Audit Trail", url: "/audit", icon: Activity },
+    { title: t('common.dashboard'), url: "/dashboard", icon: LayoutDashboard },
+    { title: t('sidebar.allDprs'), url: "/all-dprs", icon: FileText },
+    { title: t('sidebar.riskSimulation'), url: "/simulation", icon: TrendingUp },
+    { title: t('sidebar.geospatialView'), url: "/map", icon: Map },
+    { title: t('sidebar.userManagement'), url: "/users", icon: Users },
+    { title: t('sidebar.auditTrail'), url: "/audit", icon: Activity },
   ],
-};
+});
 
 interface AppSidebarProps {
   userRole?: Role;
@@ -52,6 +53,8 @@ interface AppSidebarProps {
 
 export function AppSidebar({ userRole = "admin" }: AppSidebarProps) {
   const [location] = useLocation();
+  const { t } = useTranslation();
+  const menuItems = getMenuItems(t);
   const items = menuItems[userRole];
 
   return (
@@ -62,14 +65,14 @@ export function AppSidebar({ userRole = "admin" }: AppSidebarProps) {
             <Shield className="h-6 w-6 text-primary-foreground" />
           </div>
           <div className="flex flex-col">
-            <span className="text-sm font-semibold">DPR Assessment</span>
-            <span className="text-xs text-muted-foreground capitalize">{userRole}</span>
+            <span className="text-sm font-semibold">{t('landing.title')}</span>
+            <span className="text-xs text-muted-foreground capitalize">{t(`sidebar.${userRole}`)}</span>
           </div>
         </div>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+          <SidebarGroupLabel>{t('common.navigation')}</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (

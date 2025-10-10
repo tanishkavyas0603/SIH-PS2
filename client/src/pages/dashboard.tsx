@@ -17,8 +17,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { useTranslation } from "react-i18next";
 
 export default function Dashboard() {
+  const { t } = useTranslation();
   const [selectedRole] = useState<"official" | "reviewer" | "admin">("admin");
 
   const recentDPRs = [
@@ -104,13 +106,13 @@ export default function Dashboard() {
   const getStatusConfig = (status: string) => {
     switch (status) {
       case "approved":
-        return { label: "Approved", variant: "default" as const, color: "text-success" };
+        return { label: t('status.approved'), variant: "default" as const, color: "text-success" };
       case "under_review":
-        return { label: "Under Review", variant: "secondary" as const, color: "text-warning" };
+        return { label: t('status.underReview'), variant: "secondary" as const, color: "text-warning" };
       case "rejected":
-        return { label: "Rejected", variant: "destructive" as const, color: "text-destructive" };
+        return { label: t('status.rejected'), variant: "destructive" as const, color: "text-destructive" };
       default:
-        return { label: "Pending", variant: "outline" as const, color: "text-muted-foreground" };
+        return { label: t('status.pending'), variant: "outline" as const, color: "text-muted-foreground" };
     }
   };
 
@@ -118,9 +120,9 @@ export default function Dashboard() {
     <div className="space-y-8">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold" data-testid="text-page-title">Dashboard</h1>
+          <h1 className="text-3xl font-bold" data-testid="text-page-title">{t('dashboard.title')}</h1>
           <p className="text-muted-foreground mt-1">
-            Welcome back! Here's an overview of your DPR assessment activities.
+            {t('dashboard.welcome')}
           </p>
         </div>
         <ExportReportsDialog />
@@ -128,27 +130,27 @@ export default function Dashboard() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         <StatCard
-          title="Total DPRs"
+          title={t('dashboard.totalDprs')}
           value="1,234"
           description="All time submissions"
           icon={FileText}
           trend={{ value: 12, isPositive: true }}
         />
         <StatCard
-          title="Pending Review"
+          title={t('dashboard.underReview')}
           value="42"
           description="Awaiting assessment"
           icon={Clock}
         />
         <StatCard
-          title="Approved"
+          title={t('dashboard.approved')}
           value="856"
           description="This quarter"
           icon={CheckCircle}
           trend={{ value: 8, isPositive: true }}
         />
         <StatCard
-          title="Avg Quality Score"
+          title={t('dashboard.avgQualityScore')}
           value="76.5"
           description="Current average"
           icon={TrendingUp}
@@ -160,7 +162,7 @@ export default function Dashboard() {
         <div className="lg:col-span-2">
           <Card className="p-6">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-lg font-semibold">Recent DPR Submissions</h3>
+              <h3 className="text-lg font-semibold">{t('dashboard.recentDprs')}</h3>
               <Button variant="outline" size="sm" asChild data-testid="button-view-all">
                 <Link href="/all-dprs">View All</Link>
               </Button>
@@ -171,10 +173,10 @@ export default function Dashboard() {
                 <TableRow>
                   <TableHead>ID</TableHead>
                   <TableHead>Title</TableHead>
-                  <TableHead>Status</TableHead>
-                  <TableHead>Score</TableHead>
-                  <TableHead>Submitted By</TableHead>
-                  <TableHead>Date</TableHead>
+                  <TableHead>{t('dashboard.status')}</TableHead>
+                  <TableHead>{t('dashboard.qualityScore')}</TableHead>
+                  <TableHead>{t('dashboard.submittedBy')}</TableHead>
+                  <TableHead>{t('dashboard.date')}</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
