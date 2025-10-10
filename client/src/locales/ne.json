@@ -78,5 +78,45 @@
     "selectPreferred": "कृपया जारी राख्न आफ्नो मनपर्ने भाषा छान्नुहोस्",
     "continue": "जारी राख्नुहोस्",
     "changeLanguage": "भाषा परिवर्तन गर्नुहोस्"
+  },
+  "components": {
+    "statCard": {
+      "vsLastMonth": "गत महिनाको तुलनामा"
+    },
+    "qualityScore": {
+      "title": "गुणस्तर स्कोर",
+      "outOf": "100 मध्ये",
+      "excellent": "उत्कृष्ट",
+      "needsImprovement": "सुधार आवश्यक छ",
+      "criticalIssues": "गम्भीर समस्याहरू"
+    },
+    "riskFlags": {
+      "title": "जोखिम मूल्याङ्कन",
+      "low": "कम",
+      "medium": "मध्यम",
+      "high": "उच्च"
+    },
+    "auditTrail": {
+      "title": "लेखा परीक्षण ट्रेल"
+    },
+    "exportReports": {
+      "exportReport": "रिपोर्ट निर्यात गर्नुहोस्",
+      "title": "डीपीआर रिपोर्ट निर्यात गर्नुहोस्",
+      "description": "एआई विश्लेषण, गुणस्तर स्कोर र जोखिम मूल्याङ्कनसहित व्यापक रिपोर्ट उत्पन्न गर्नुहोस्",
+      "selectFormat": "ढाँचा छान्नुहोस्",
+      "pdfReport": "पीडीएफ रिपोर्ट",
+      "pdfDescription": "चार्ट र भिजुअलाइजेशनसहित पेशेवर ढाँचा",
+      "excelSpreadsheet": "एक्सेल स्प्रेडसिट",
+      "excelDescription": "थप विश्लेषण र प्रशोधनका लागि तालिकाबद्ध डेटा",
+      "reportContents": "रिपोर्ट सामग्री",
+      "dprSummary": "डीपीआर सारांश र मेटाडाटा",
+      "aiQualityScore": "व्याख्यासहित एआई गुणस्तर स्कोर",
+      "riskFlags": "जोखिम झण्डा र सिफारिसहरू",
+      "geospatialValidation": "भू-स्थानिक प्रमाणीकरण परिणाम",
+      "fraudDetection": "धोखाधडी पत्ता लगाउने विश्लेषण",
+      "completeAuditTrail": "पूर्ण लेखा परीक्षण ट्रेल",
+      "cancel": "रद्द गर्नुहोस्",
+      "export": "निर्यात"
+    }
   }
 }

@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AlertTriangle, CheckCircle, XCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface RiskFlag {
   id: string;
@@ -14,6 +15,7 @@ interface RiskFlagsProps {
 }
 
 export function RiskFlags({ flags }: RiskFlagsProps) {
+  const { t } = useTranslation();
   const getSeverityConfig = (severity: string) => {
     switch (severity) {
       case "low":
@@ -29,7 +31,7 @@ export function RiskFlags({ flags }: RiskFlagsProps) {
 
   return (
     <Card className="p-6" data-testid="card-risk-flags">
-      <h3 className="text-lg font-semibold mb-4">Risk Assessment</h3>
+      <h3 className="text-lg font-semibold mb-4">{t('components.riskFlags.title')}</h3>
       <div className="space-y-3">
         {flags.map((flag) => {
           const config = getSeverityConfig(flag.severity);

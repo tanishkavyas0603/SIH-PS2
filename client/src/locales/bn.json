@@ -78,5 +78,45 @@
     "selectPreferred": "অনুগ্রহ করে চালিয়ে যেতে আপনার পছন্দের ভাষা নির্বাচন করুন",
     "continue": "চালিয়ে যান",
     "changeLanguage": "ভাষা পরিবর্তন করুন"
+  },
+  "components": {
+    "statCard": {
+      "vsLastMonth": "গত মাসের তুলনায়"
+    },
+    "qualityScore": {
+      "title": "গুণমান স্কোর",
+      "outOf": "১০০ এর মধ্যে",
+      "excellent": "চমৎকার",
+      "needsImprovement": "উন্নতি প্রয়োজন",
+      "criticalIssues": "গুরুতর সমস্যা"
+    },
+    "riskFlags": {
+      "title": "ঝুঁকি মূল্যায়ন",
+      "low": "কম",
+      "medium": "মধ্যম",
+      "high": "উচ্চ"
+    },
+    "auditTrail": {
+      "title": "অডিট ট্রেইল"
+    },
+    "exportReports": {
+      "exportReport": "রিপোর্ট এক্সপোর্ট করুন",
+      "title": "ডিপিআর রিপোর্ট এক্সপোর্ট করুন",
+      "description": "এআই বিশ্লেষণ, গুণমান স্কোর এবং ঝুঁকি মূল্যায়ন সহ একটি ব্যাপক রিপোর্ট তৈরি করুন",
+      "selectFormat": "ফর্ম্যাট নির্বাচন করুন",
+      "pdfReport": "পিডিএফ রিপোর্ট",
+      "pdfDescription": "চার্ট এবং ভিজ্যুয়ালাইজেশন সহ পেশাদার ফর্ম্যাট",
+      "excelSpreadsheet": "এক্সেল স্প্রেডশীট",
+      "excelDescription": "আরও বিশ্লেষণ এবং প্রক্রিয়াকরণের জন্য সারণীবদ্ধ ডেটা",
+      "reportContents": "রিপোর্ট বিষয়বস্তু",
+      "dprSummary": "ডিপিআর সারাংশ এবং মেটাডেটা",
+      "aiQualityScore": "ব্যাখ্যা সহ এআই গুণমান স্কোর",
+      "riskFlags": "ঝুঁকি ফ্ল্যাগ এবং সুপারিশ",
+      "geospatialValidation": "ভূ-স্থানিক যাচাইকরণ ফলাফল",
+      "fraudDetection": "প্রতারণা সনাক্তকরণ বিশ্লেষণ",
+      "completeAuditTrail": "সম্পূর্ণ অডিট ট্রেইল",
+      "cancel": "বাতিল করুন",
+      "export": "এক্সপোর্ট"
+    }
   }
 }

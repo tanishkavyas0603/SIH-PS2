@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { LucideIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface StatCardProps {
   title: string;
@@ -13,6 +14,8 @@ interface StatCardProps {
 }
 
 export function StatCard({ title, value, description, icon: Icon, trend }: StatCardProps) {
+  const { t } = useTranslation();
+  
   return (
     <Card className="p-6 hover-elevate" data-testid={`card-stat-${title.toLowerCase().replace(/\s+/g, '-')}`}>
       <div className="flex items-start justify-between">
@@ -27,7 +30,7 @@ export function StatCard({ title, value, description, icon: Icon, trend }: StatC
               <span className={`text-sm font-medium ${trend.isPositive ? "text-success" : "text-destructive"}`}>
                 {trend.isPositive ? "+" : ""}{trend.value}%
               </span>
-              <span className="text-xs text-muted-foreground">vs last month</span>
+              <span className="text-xs text-muted-foreground">{t('components.statCard.vsLastMonth')}</span>
             </div>
           )}
         </div>

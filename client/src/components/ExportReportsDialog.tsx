@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Download, FileText, Table } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface ExportReportsDialogProps {
   dprId?: string;
@@ -18,6 +19,7 @@ interface ExportReportsDialogProps {
 }
 
 export function ExportReportsDialog({ dprId, dprTitle = "DPR Report" }: ExportReportsDialogProps) {
+  const { t } = useTranslation();
   const [format, setFormat] = useState<"pdf" | "excel">("pdf");
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,20 +33,20 @@ export function ExportReportsDialog({ dprId, dprTitle = "DPR Report" }: ExportRe
       <DialogTrigger asChild>
         <Button data-testid="button-export-report">
           <Download className="h-4 w-4 mr-2" />
-          Export Report
+          {t('components.exportReports.exportReport')}
         </Button>
       </DialogTrigger>
       <DialogContent data-testid="dialog-export">
         <DialogHeader>
-          <DialogTitle>Export DPR Report</DialogTitle>
+          <DialogTitle>{t('components.exportReports.title')}</DialogTitle>
           <DialogDescription>
-            Generate a comprehensive report with AI analysis, quality scores, and risk assessments
+            {t('components.exportReports.description')}
           </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-6 py-4">
           <div className="space-y-3">
-            <Label>Select Format</Label>
+            <Label>{t('components.exportReports.selectFormat')}</Label>
             <RadioGroup value={format} onValueChange={(value) => setFormat(value as "pdf" | "excel")}>
               <div className="flex items-center space-x-3 p-4 rounded-lg border hover-elevate">
                 <RadioGroupItem value="pdf" id="pdf" data-testid="radio-pdf" />
@@ -54,9 +56,9 @@ export function ExportReportsDialog({ dprId, dprTitle = "DPR Report" }: ExportRe
                       <FileText className="h-5 w-5 text-destructive" />
                     </div>
                     <div>
-                      <div className="font-medium">PDF Report</div>
+                      <div className="font-medium">{t('components.exportReports.pdfReport')}</div>
                       <div className="text-sm text-muted-foreground">
-                        Professional format with charts and visualizations
+                        {t('components.exportReports.pdfDescription')}
                       </div>
                     </div>
                   </div>
@@ -71,9 +73,9 @@ export function ExportReportsDialog({ dprId, dprTitle = "DPR Report" }: ExportRe
                       <Table className="h-5 w-5 text-success" />
                     </div>
                     <div>
-                      <div className="font-medium">Excel Spreadsheet</div>
+                      <div className="font-medium">{t('components.exportReports.excelSpreadsheet')}</div>
                       <div className="text-sm text-muted-foreground">
-                        Tabular data for further analysis and processing
+                        {t('components.exportReports.excelDescription')}
                       </div>
                     </div>
                   </div>
@@ -83,25 +85,25 @@ export function ExportReportsDialog({ dprId, dprTitle = "DPR Report" }: ExportRe
           </div>
 
           <div className="p-4 bg-muted rounded-lg">
-            <h4 className="font-medium text-sm mb-2">Report Contents</h4>
+            <h4 className="font-medium text-sm mb-2">{t('components.exportReports.reportContents')}</h4>
             <ul className="text-sm text-muted-foreground space-y-1">
-              <li>• DPR Summary & Metadata</li>
-              <li>• AI Quality Score with Explanation</li>
-              <li>• Risk Flags & Recommendations</li>
-              <li>• Geospatial Validation Results</li>
-              <li>• Fraud Detection Analysis</li>
-              <li>• Complete Audit Trail</li>
+              <li>• {t('components.exportReports.dprSummary')}</li>
+              <li>• {t('components.exportReports.aiQualityScore')}</li>
+              <li>• {t('components.exportReports.riskFlags')}</li>
+              <li>• {t('components.exportReports.geospatialValidation')}</li>
+              <li>• {t('components.exportReports.fraudDetection')}</li>
+              <li>• {t('components.exportReports.completeAuditTrail')}</li>
             </ul>
           </div>
         </div>
 
         <div className="flex justify-end gap-3">
           <Button variant="outline" onClick={() => setIsOpen(false)} data-testid="button-cancel-export">
-            Cancel
+            {t('components.exportReports.cancel')}
           </Button>
           <Button onClick={handleExport} data-testid="button-confirm-export">
             <Download className="h-4 w-4 mr-2" />
-            Export {format.toUpperCase()}
+            {t('components.exportReports.export')} {format.toUpperCase()}
           </Button>
         </div>
       </DialogContent>

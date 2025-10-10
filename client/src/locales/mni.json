@@ -78,5 +78,45 @@
     "selectPreferred": "ꯆꯠꯅꯕꯒꯤꯗꯃꯛ ꯅꯍꯥꯛꯀꯤ ꯄꯥꯝꯕꯥ ꯂꯣꯟ ꯈꯅꯕꯤꯌꯨ",
     "continue": "ꯆꯠꯊꯣꯀꯎ",
     "changeLanguage": "ꯂꯣꯟ ꯍꯣꯡꯗꯣꯀꯎ"
+  },
+  "components": {
+    "statCard": {
+      "vsLastMonth": "ꯍꯧꯈꯤꯕꯥ ꯊꯥꯒꯤ ꯆꯥꯡꯗꯝꯅꯥ"
+    },
+    "qualityScore": {
+      "title": "ꯀ꯭ꯕꯥꯂꯤꯇꯤ ꯁ꯭ꯀꯣꯔ",
+      "outOf": "100 ꯒꯤ ꯃꯅꯨꯡꯗꯥ",
+      "excellent": "ꯌꯥꯝꯅꯥ ꯐꯕꯥ",
+      "needsImprovement": "ꯐꯒꯠꯍꯅꯕꯥ ꯃꯊꯧ ꯇꯥꯏ",
+      "criticalIssues": "ꯌꯥꯝꯅꯥ ꯃꯔꯨꯑꯣꯏꯕꯥ ꯋꯥꯐꯃꯁꯤꯡ"
+    },
+    "riskFlags": {
+      "title": "ꯔꯤꯁ꯭ꯛ ꯑꯦꯁꯦꯁꯃꯦꯟꯇ",
+      "low": "ꯅꯦꯝꯕꯥ",
+      "medium": "ꯃꯌꯥꯏ ꯑꯣꯏꯕꯥ",
+      "high": "ꯋꯥꯡꯕꯥ"
+    },
+    "auditTrail": {
+      "title": "ꯑꯣꯗꯤꯠ ꯇ꯭ꯔꯦꯏꯜ"
+    },
+    "exportReports": {
+      "exportReport": "ꯔꯤꯄꯣꯔꯠ ꯑꯦꯛꯁꯄꯣꯔꯠ ꯇꯧ",
+      "title": "ꯗꯤꯄꯤꯑꯥꯔ ꯔꯤꯄꯣꯔꯠ ꯑꯦꯛꯁꯄꯣꯔꯠ ꯇꯧ",
+      "description": "ꯑꯦ.ꯑꯥꯏ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ, ꯀ꯭ꯕꯥꯂꯤꯇꯤ ꯁ꯭ꯀꯣꯔ ꯑꯃꯁꯨꯡ ꯔꯤꯁ꯭ꯛ ꯑꯦꯁꯦꯁꯃꯦꯟꯇꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯄꯥꯛ-ꯆꯥꯎꯕꯥ ꯔꯤꯄꯣꯔꯠ ꯑꯃꯥ ꯁꯦꯃꯒꯠꯄꯥ",
+      "selectFormat": "ꯐꯣꯔꯃꯦꯠ ꯈꯅꯕꯤꯌꯨ",
+      "pdfReport": "ꯄꯤ.ꯗꯤ.ꯑꯦꯐ ꯔꯤꯄꯣꯔꯠ",
+      "pdfDescription": "ꯆꯥꯔꯠ ꯑꯃꯁꯨꯡ ꯚꯤꯖꯨꯑꯦꯂꯥꯏꯖꯦꯁꯅꯁꯤꯡꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯄ꯭ꯔꯣꯐꯦꯁꯅꯦꯜ ꯐꯣꯔꯃꯦꯠ",
+      "excelSpreadsheet": "ꯑꯦꯛꯁꯦꯜ ꯁ꯭ꯞꯔꯦꯗꯁꯤꯠ",
+      "excelDescription": "ꯃꯈꯥ ꯇꯥꯅꯥ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ ꯑꯃꯁꯨꯡ ꯄ꯭ꯔꯣꯁꯦꯁꯤꯡꯒꯤꯗꯃꯛꯇꯥ ꯇꯦꯕꯜ ꯗꯦꯇꯥ",
+      "reportContents": "ꯔꯤꯄꯣꯔꯠꯀꯤ ꯀꯟꯇꯦꯟꯇꯁꯤꯡ",
+      "dprSummary": "ꯗꯤꯄꯤꯑꯥꯔ ꯁꯃꯔꯤ ꯑꯃꯁꯨꯡ ꯃꯦꯇꯥꯗꯦꯇꯥ",
+      "aiQualityScore": "ꯑꯦꯛꯁꯞꯂꯦꯅꯦꯁꯅꯒꯥ ꯂꯣꯌꯅꯅꯥ ꯑꯦ.ꯑꯥꯏ ꯀ꯭ꯕꯥꯂꯤꯇꯤ ꯁ꯭ꯀꯣꯔ",
+      "riskFlags": "ꯔꯤꯁ꯭ꯛ ꯐ꯭ꯂꯦꯒꯁꯤꯡ ꯑꯃꯁꯨꯡ ꯔꯤꯀꯃꯦꯟꯗꯦꯁꯅꯁꯤꯡ",
+      "geospatialValidation": "ꯖꯤꯑꯣꯁ꯭ꯄꯦꯁꯤꯑꯦꯜ ꯚꯦꯂꯤꯗꯦꯁꯟ ꯔꯤꯖꯜꯇꯁꯤꯡ",
+      "fraudDetection": "ꯐ꯭ꯔꯣꯗ ꯗꯤꯇꯦꯛꯁꯟ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ",
+      "completeAuditTrail": "ꯃꯄꯨꯡ ꯐꯥꯕꯥ ꯑꯣꯗꯤꯠ ꯇ꯭ꯔꯦꯏꯜ",
+      "cancel": "ꯀꯦꯟꯁꯦꯜ ꯇꯧ",
+      "export": "ꯑꯦꯛꯁꯄꯣꯔꯠ"
+    }
   }
 }

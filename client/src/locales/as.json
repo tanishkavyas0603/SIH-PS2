@@ -78,5 +78,45 @@
     "selectPreferred": "অনুগ্ৰহ কৰি আগবাঢ়িবলৈ আপোনাৰ পছন্দৰ ভাষা নিৰ্বাচন কৰক",
     "continue": "আগবাঢ়ক",
     "changeLanguage": "ভাষা সলনি কৰক"
+  },
+  "components": {
+    "statCard": {
+      "vsLastMonth": "যোৱা মাহৰ তুলনাত"
+    },
+    "qualityScore": {
+      "title": "গুণগত স্কোৰ",
+      "outOf": "১০০ ৰ ভিতৰত",
+      "excellent": "উৎকৃষ্ট",
+      "needsImprovement": "উন্নতিৰ প্ৰয়োজন",
+      "criticalIssues": "গুৰুতৰ সমস্যা"
+    },
+    "riskFlags": {
+      "title": "বিপদ মূল্যায়ন",
+      "low": "কম",
+      "medium": "মধ্যম",
+      "high": "উচ্চ"
+    },
+    "auditTrail": {
+      "title": "অডিট ট্ৰেইল"
+    },
+    "exportReports": {
+      "exportReport": "প্ৰতিবেদন ৰপ্তানি কৰক",
+      "title": "ডিপিআৰ প্ৰতিবেদন ৰপ্তানি কৰক",
+      "description": "এআই বিশ্লেষণ, গুণগত স্কোৰ আৰু বিপদ মূল্যায়নৰ সৈতে এটা বিস্তৃত প্ৰতিবেদন সৃষ্টি কৰক",
+      "selectFormat": "বিন্যাস নিৰ্বাচন কৰক",
+      "pdfReport": "পিডিএফ প্ৰতিবেদন",
+      "pdfDescription": "চাৰ্ট আৰু দৃশ্যায়নৰ সৈতে পেশাদাৰী বিন্যাস",
+      "excelSpreadsheet": "এক্সেল স্প্ৰেডশ্বীট",
+      "excelDescription": "অধিক বিশ্লেষণ আৰু প্ৰক্ৰিয়াকৰণৰ বাবে তালিকাবদ্ধ তথ্য",
+      "reportContents": "প্ৰতিবেদন বিষয়বস্তু",
+      "dprSummary": "ডিপিআৰ সাৰাংশ আৰু মেটাডাটা",
+      "aiQualityScore": "ব্যাখ্যাৰ সৈতে এআই গুণগত স্কোৰ",
+      "riskFlags": "বিপদ পতাকা আৰু পৰামৰ্শ",
+      "geospatialValidation": "ভূ-স্থানিক বৈধকৰণ ফলাফল",
+      "fraudDetection": "প্ৰতাৰণা চিনাক্তকৰণ বিশ্লেষণ",
+      "completeAuditTrail": "সম্পূৰ্ণ অডিট ট্ৰেইল",
+      "cancel": "বাতিল কৰক",
+      "export": "ৰপ্তানি"
+    }
   }
 }

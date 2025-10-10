@@ -78,5 +78,45 @@
     "selectPreferred": "कृपया जारी रखने के लिए अपनी पसंदीदा भाषा चुनें",
     "continue": "जारी रखें",
     "changeLanguage": "भाषा बदलें"
+  },
+  "components": {
+    "statCard": {
+      "vsLastMonth": "पिछले महीने की तुलना में"
+    },
+    "qualityScore": {
+      "title": "गुणवत्ता स्कोर",
+      "outOf": "100 में से",
+      "excellent": "उत्कृष्ट",
+      "needsImprovement": "सुधार की आवश्यकता",
+      "criticalIssues": "गंभीर समस्याएं"
+    },
+    "riskFlags": {
+      "title": "जोखिम मूल्यांकन",
+      "low": "कम",
+      "medium": "मध्यम",
+      "high": "उच्च"
+    },
+    "auditTrail": {
+      "title": "ऑडिट ट्रेल"
+    },
+    "exportReports": {
+      "exportReport": "रिपोर्ट निर्यात करें",
+      "title": "डीपीआर रिपोर्ट निर्यात करें",
+      "description": "एआई विश्लेषण, गुणवत्ता स्कोर और जोखिम मूल्यांकन के साथ एक व्यापक रिपोर्ट उत्पन्न करें",
+      "selectFormat": "प्रारूप चुनें",
+      "pdfReport": "पीडीएफ रिपोर्ट",
+      "pdfDescription": "चार्ट और विज़ुअलाइज़ेशन के साथ पेशेवर प्रारूप",
+      "excelSpreadsheet": "एक्सेल स्प्रेडशीट",
+      "excelDescription": "आगे के विश्लेषण और प्रसंस्करण के लिए सारणीबद्ध डेटा",
+      "reportContents": "रिपोर्ट सामग्री",
+      "dprSummary": "डीपीआर सारांश और मेटाडेटा",
+      "aiQualityScore": "व्याख्या के साथ एआई गुणवत्ता स्कोर",
+      "riskFlags": "जोखिम झंडे और सिफारिशें",
+      "geospatialValidation": "भू-स्थानिक सत्यापन परिणाम",
+      "fraudDetection": "धोखाधड़ी का पता लगाने का विश्लेषण",
+      "completeAuditTrail": "पूर्ण ऑडिट ट्रेल",
+      "cancel": "रद्द करें",
+      "export": "निर्यात"
+    }
   }
 }

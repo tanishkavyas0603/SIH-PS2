@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Clock, Upload, MessageSquare, CheckCircle, XCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface AuditEvent {
   id: string;
@@ -18,6 +19,7 @@ interface AuditTrailProps {
 }
 
 export function AuditTrail({ events }: AuditTrailProps) {
+  const { t } = useTranslation();
   const getEventIcon = (type: string) => {
     switch (type) {
       case "upload":
@@ -49,7 +51,7 @@ export function AuditTrail({ events }: AuditTrailProps) {
 
   return (
     <Card className="p-6" data-testid="card-audit-trail">
-      <h3 className="text-lg font-semibold mb-6">Audit Trail</h3>
+      <h3 className="text-lg font-semibold mb-6">{t('components.auditTrail.title')}</h3>
       <div className="relative">
         <div className="absolute left-6 top-0 bottom-0 w-px bg-border"></div>
         

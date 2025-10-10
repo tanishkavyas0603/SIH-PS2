@@ -78,5 +78,45 @@
     "selectPreferred": "Please select your preferred language to continue",
     "continue": "Continue",
     "changeLanguage": "Change Language"
+  },
+  "components": {
+    "statCard": {
+      "vsLastMonth": "vs last month"
+    },
+    "qualityScore": {
+      "title": "Quality Score",
+      "outOf": "out of 100",
+      "excellent": "Excellent",
+      "needsImprovement": "Needs Improvement",
+      "criticalIssues": "Critical Issues"
+    },
+    "riskFlags": {
+      "title": "Risk Assessment",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "auditTrail": {
+      "title": "Audit Trail"
+    },
+    "exportReports": {
+      "exportReport": "Export Report",
+      "title": "Export DPR Report",
+      "description": "Generate a comprehensive report with AI analysis, quality scores, and risk assessments",
+      "selectFormat": "Select Format",
+      "pdfReport": "PDF Report",
+      "pdfDescription": "Professional format with charts and visualizations",
+      "excelSpreadsheet": "Excel Spreadsheet",
+      "excelDescription": "Tabular data for further analysis and processing",
+      "reportContents": "Report Contents",
+      "dprSummary": "DPR Summary & Metadata",
+      "aiQualityScore": "AI Quality Score with Explanation",
+      "riskFlags": "Risk Flags & Recommendations",
+      "geospatialValidation": "Geospatial Validation Results",
+      "fraudDetection": "Fraud Detection Analysis",
+      "completeAuditTrail": "Complete Audit Trail",
+      "cancel": "Cancel",
+      "export": "Export"
+    }
   }
 }
